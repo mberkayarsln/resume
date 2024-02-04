@@ -1,0 +1,103 @@
+:root {
+  --light-gray: rgb(68, 68, 68);
+  --dark-gray: rgb(34, 34, 34);
+  --white: rgb(245, 245, 245);
+  --gray: rgb(176, 176, 176);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url("/images/background.svg");
+  background-size: cover;
+}
+
+.info-card {
+  width: 1200px;
+  max-width: 1200px;
+  height: 600px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: var(--light-gray);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 40px;
+}
+
+.info-card .left-card {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 0;
+}
+
+.info-card .left-card .avatar {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.info-card .left-card .name-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-card .left-card .name-title .name {
+  font-size: 2.4em;
+  color: var(--white);
+  font-weight: 600;
+  margin-bottom:8px;
+}
+.info-card .left-card .name-title .title {
+  font-size: 1.3em;
+  color: var(--gray);
+  font-weight: 100;
+}
+
+.info-card .left-card .icon-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-card .left-card .icon-links .icon-link {
+  filter: brightness(0) saturate(100%) invert(99%) sepia(85%) saturate(153%)
+    hue-rotate(158deg) brightness(114%) contrast(85%);
+}
+
+.info-card .right-card {
+  width: 70%;
+  height: 100%;
+  border-radius: 40px;
+  background: var(--dark-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-card .right-card .right-card-name {
+  font-size: 3.5em;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+.info-card .right-card .right-card-title {
+  font-size: 1.6em;
+  font-weight: 100;
+  color: var(--gray);
+}
