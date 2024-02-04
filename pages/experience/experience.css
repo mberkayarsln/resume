@@ -1,0 +1,32 @@
+.info-card .right-card {
+  width: 70%;
+  height: 100%;
+  border-radius: 40px;
+  background: var(--dark-gray);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50px;
+}
+
+.experience-div {
+  margin-bottom: 30px;
+}
+
+.experience-header {
+  font-size: 2em;
+  font-style: italic;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+
+.experience-type {
+  font-size: 1.5em;
+  color: var(--blue);
+  margin-bottom: 6px;
+}
+
+.experience-value {
+  font-size: 1.2em;
+  color: var(--gray);
+}
