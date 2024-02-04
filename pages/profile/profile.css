@@ -9,7 +9,7 @@
   padding: 50px;
 }
 
-.profile-headers {
+.profile-header {
   font-size: 2em;
   font-style: italic;
   color: var(--white);
@@ -31,7 +31,7 @@
   margin-bottom: 30px;
 }
 
-.profile-lists {
+.profile-list {
   list-style-type: square;
   margin-left: 10px;
 }
