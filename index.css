@@ -9,14 +9,14 @@
   align-items: center;
 }
 
-.info-card .right-card .right-card-name {
+.right-card-name {
   font-size: 3.5em;
   font-weight: 600;
   margin-bottom: 12px;
   color: var(--white);
 }
 
-.info-card .right-card .right-card-title {
+.right-card-title {
   font-size: 1.6em;
   font-weight: 100;
   color: var(--gray);
