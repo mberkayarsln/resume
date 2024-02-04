@@ -3,6 +3,8 @@
   --dark-gray: rgb(34, 34, 34);
   --white: rgb(245, 245, 245);
   --gray: rgb(176, 176, 176);
+  --blue: rgb(127, 199, 250);
+  --dark-blue: rgb(75, 134, 168);
 }
 
 * {
@@ -17,9 +19,17 @@ body {
   background-size: cover;
 }
 
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  padding: 0px 20px;
+}
+
 .info-card {
   width: 1200px;
-  max-width: 1200px;
   height: 600px;
 
   display: flex;
@@ -27,10 +37,10 @@ body {
   align-items: center;
 
   background: var(--light-gray);
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   border-radius: 40px;
 }
 
@@ -47,6 +57,10 @@ body {
 .info-card .left-card .avatar {
   width: 200px;
   border-radius: 50%;
+  transition: 1.5s ease;
+}
+.info-card .left-card .avatar:hover {
+  transform: rotateY(180deg);
 }
 
 .info-card .left-card .name-title {
@@ -60,7 +74,7 @@ body {
   font-size: 2.4em;
   color: var(--white);
   font-weight: 600;
-  margin-bottom:8px;
+  margin-bottom: 8px;
 }
 .info-card .left-card .name-title .title {
   font-size: 1.3em;
@@ -75,29 +89,51 @@ body {
 }
 
 .info-card .left-card .icon-links .icon-link {
+  margin: 0 8px;
+}
+
+.icon {
   filter: brightness(0) saturate(100%) invert(99%) sepia(85%) saturate(153%)
     hue-rotate(158deg) brightness(114%) contrast(85%);
+  transition: 0.5s ease;
+  height: 36px;
+}
+.icon:hover {
+  filter: brightness(0) saturate(100%) invert(70%) sepia(66%) saturate(470%)
+    hue-rotate(176deg) brightness(97%) contrast(101%);
+  transform: scale(1.2);
 }
 
-.info-card .right-card {
-  width: 70%;
-  height: 100%;
-  border-radius: 40px;
-  background: var(--dark-gray);
+.sidebar {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  height: 600px;
 }
 
-.info-card .right-card .right-card-name {
-  font-size: 3.5em;
-  font-weight: 600;
-  color: var(--white);
-  margin-bottom: 12px;
+.sidebar .topbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--light-gray);
+  padding: 24px 16px;
+  border-radius: 50px;
 }
-.info-card .right-card .right-card-title {
-  font-size: 1.6em;
-  font-weight: 100;
-  color: var(--gray);
+
+.sidebar .topbar .topbar-links {
+  margin: 8px 0;
+}
+
+.sidebar .topbar .topbar-links .topbar-icon {
+  width: 36px;
+  filter: brightness(0) saturate(100%) invert(74%) sepia(0%) saturate(0%)
+    hue-rotate(3deg) brightness(95%) contrast(93%);
+  transition: 0.5s ease;
+}
+.sidebar .topbar .topbar-links .topbar-icon:hover {
+  filter: brightness(0) saturate(100%) invert(70%) sepia(66%) saturate(470%)
+    hue-rotate(176deg) brightness(97%) contrast(101%);
+  transform: scale(1.2);
 }
