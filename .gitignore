@@ -1,0 +1,5 @@
+# Ignore template files
+template*.webp
+
+# Ignore .DS_Store files
+.DS_Store
