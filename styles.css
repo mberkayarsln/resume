@@ -58,9 +58,19 @@ body {
   width: 200px;
   border-radius: 50%;
   transition: 1.5s ease;
+  animation: rotation 3s ease alternate infinite;
 }
-.info-card .left-card .avatar:hover {
+/* .info-card .left-card .avatar:hover {
   transform: rotateY(180deg);
+} */
+
+@keyframes rotation{
+  0%{
+    transform: rotateY(0deg);
+  }
+  100%{
+    transform: rotateY(180deg);
+  }
 }
 
 .info-card .left-card .name-title {
